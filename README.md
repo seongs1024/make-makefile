@@ -12,6 +12,20 @@ Options:
   -V, --version      Print version
 ```
 
+---
+
+### Install
+
+If you've got the `cargo` package manager of `Rust` then you can run the command.
+
+```shell
+cargo install make-makefile
+```
+
+Or you can download it on the [release](https://github.com/seongs1024/make-makefile/releases) page.
+
+---
+
 ### Generate a template
 
 The `mm` generates `Makefile` template in your project directory.

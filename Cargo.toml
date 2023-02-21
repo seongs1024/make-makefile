@@ -1,6 +1,6 @@
 [package]
 name = "make-makefile"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Seongsu Park <seongs1024@gmail.com>"]
 license = "MIT"
