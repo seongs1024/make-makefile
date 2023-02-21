@@ -1,0 +1,20 @@
+[package]
+name = "make-makefile"
+version = "0.1.0"
+edition = "2021"
+authors = ["Seongsu Park <seongs1024@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tokio-rs/tokio"
+description = """
+The simple Makefile generator.
+"""
+categories = ["development-tools", "build-utils"]
+keywords = ["make", "makefile"]
+
+[[bin]]
+name = "mm"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.1.6", features = ["derive"] }

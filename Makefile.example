@@ -1,28 +1,3 @@
-# make-makefile
-
-The simple Makefile generator
-
-```shell
-Usage: mm [OPTIONS]
-
-Options:
-  -n, --name <NAME>  Name of the project
-  -k, --kind <KIND>  Binary or library [default: bin] [possible values: bin, lib]
-  -h, --help         Print help
-  -V, --version      Print version
-```
-
-### Generate a template
-
-The `mm` generates `Makefile` template in your project directory.
-
-You can change `{PROGRAM}` to your project name.
-
-```shell
-mm 
-```
-
-```Makefile
 #The Target
 #For Binary: <name>, For Library: lib<name>.a
 NAME		:=	{PROGRAM}
@@ -112,42 +87,3 @@ $(BLDDIR)/%.$(OEXT): $(SRCDIR)/%.$(CEXT)
 
 #Non-File Targets
 .PHONY: all re clean fclean bonus directories depend
-```
-
-#### Name specifier
-
-```shell
-mm --name hello
-```
-
-```Makefile
-#The Target
-#For Binary: <name>, For Library: lib<name>.a
-NAME		:=	hello
-```
-
-#### Kind option
-
-##### Binary template
-
-```shell
-mm --name hello --kind=bin
-```
-
-```Makefile
-#The Target
-#For Binary: <name>, For Library: lib<name>.a
-NAME		:=	hello
-```
-
-##### Library template
-
-```shell
-mm --name hello --kind=lib
-```
-
-```Makefile
-#The Target
-#For Binary: <name>, For Library: lib<name>.a
-NAME		:=	libhello.a
-```
