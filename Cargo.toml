@@ -1,11 +1,11 @@
 [package]
 name = "make-makefile"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Seongsu Park <seongs1024@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/tokio-rs/tokio"
+repository = "https://github.com/seongs1024/make-makefile"
 description = """
 The simple Makefile generator.
 """
